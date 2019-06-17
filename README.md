@@ -13,6 +13,7 @@ ROS 패키지 중 하드웨어의 상태를 모니터링을 하는 [diagnostic](
 기본 구조 및 동작 원리
 
 ![기본 구조 다이어그램](https://github.com/Kyungpyo-Kim/ros_diagnostics/blob/master/doc/image/diagram.jpg?raw=true)
+
 기본구조는 그림과 같이 크게 updater, aggregator, 그리고 rqt_monitor 이렇게 세개의 부분(모듈이라고 하겠다)으로 설명할 수 있을 것 같다.
 
 #### Updator
