@@ -43,7 +43,8 @@ Diagnostics 패키지를 이용하여 센서 드라이버를 작성하는 방법
 * Publishing 되는 센서의 결과 topic 의 주기
 * 센서의 연결 상태
 
-
+!TODO
+python gps node 클래스화
 
 
 #### Aggregator 실행

@@ -13,15 +13,15 @@
 #include <diagnostic_updater/diagnostic_updater.h>
 #include <sensor_msgs/Imu.h>
 
-
 #include <diagnostic_tasks.h>
-
 
 class ImuDriver{
 
 public:
     ImuDriver()
-    :state_tast_(true){}
+    :exec_terminating_(false),
+    diag_terminating_(false),
+    state_task_(true){}
 
     ~ImuDriver(){}
     void init(
@@ -30,12 +30,12 @@ public:
     );
 
 private:
-    void exceLoop();
-    void stateUpdate();
+    void execLoop();
+    void diagnosticUpdate();
 
     std::mutex exec_mutex_;
     std::condition_variable exec_cv_;
-    std::atomic_bool terminating_;
+    std::atomic_bool exec_terminating_;
     std::thread exec_thread_;
 
     std::shared_ptr<diagnostic_updater::Updater> updater_;
@@ -45,5 +45,9 @@ private:
 
     bool state_;
 
-    StateTask state_tast_;
+    StateTask state_task_;
+    std::mutex diag_mutex_;
+    std::condition_variable diag_cv_;
+    std::atomic_bool diag_terminating_;
+    std::thread diag_thread_;
 };

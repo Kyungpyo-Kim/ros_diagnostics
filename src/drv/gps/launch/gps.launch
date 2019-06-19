@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<launch>
+ <node pkg="gps" type="gps_node.py" name="gps_node" output="screen">
+ </node>
+</launch>

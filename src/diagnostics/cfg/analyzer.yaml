@@ -1,0 +1,35 @@
+pub_rate: 1.0
+analyzers:
+  application:
+    type: AnalyzerGroup
+    path: App
+    analyzers:
+      control:
+        type: GenericAnalyzer
+        path: control
+        find_and_remove_prefix: control_node
+        num_items: 2
+        timeout: 5.0
+      planning:
+        type: GenericAnalyzer
+        path: planning
+        find_and_remove_prefix: planning_node
+        num_items: 2
+        timeout: 5.0
+  sensors:
+    type: AnalyzerGroup
+    path: Drv
+    analyzers:
+      imu:
+        type: GenericAnalyzer
+        path: imu
+        find_and_remove_prefix: imu_node
+        num_items: 2
+        timeout: 5.0
+      gps:
+        type: GenericAnalyzer
+        path: gps
+        find_and_remove_prefix: gps_node
+        num_items: 2
+        timeout: 5.0
+      

@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<launch>
+ <node pkg="imu" type="imu_node" name="imu_node" output="screen">
+ </node>
+</launch>
