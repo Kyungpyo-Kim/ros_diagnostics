@@ -37,10 +37,13 @@ Aggregator 는 말그대로 updator 를 통해 update 된 결과들을 통합해
 
 이부분은 다음의 블로그를 많이 참고 하였다. [[요기]](http://nlamprian.me/blog/software/ros/2018/03/21/ros-diagnostics/)
 
-#### 센서 드라이버 작성하기
+#### 센서 드라이버 작성하기 (WSL Ubuntu18.04, ROS-melodic)
 Diagnostics 패키지를 이용하여 센서 드라이버를 작성하는 방법을 먼저 정리해 본다. 앞에서 잠깐 언급한 *잘 만든 드라이버*는 다음의 결과들을 진단하여 모니터링할 수 있게 해준다.
 * Publishing 되는 센서의 결과 topic 의 주기
 * 센서의 연결 상태
+
+
+
 
 #### Aggregator 실행
 
