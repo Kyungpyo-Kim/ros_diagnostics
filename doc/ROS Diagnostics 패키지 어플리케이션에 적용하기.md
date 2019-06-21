@@ -1,0 +1,1 @@
+# ROS Diagnostics 패키지 어플리케이션에 적용하기
