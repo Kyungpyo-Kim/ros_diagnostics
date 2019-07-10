@@ -2,9 +2,9 @@
 ROS diagnostics package exercise
 
 ## 관련 문서
-* [ROS Diagnostics 패키지 이해하기](https://kyungpyo-kim/github.io)
-* [ROS Diagnostics 패키지 센서 드라이버에 적용하기](https://kyungpyo-kim/github.io)
-* [ROS Diagnostics 패키지 어플리케이션에 적용하기](https://kyungpyo-kim/github.io)
+* [ROS Diagnostics 패키지 이해하기](https://kyungpyo-kim.github.io/study/ROS-Diagnostics-%ED%8C%A8%ED%82%A4%EC%A7%80-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0/)
+* [ROS Diagnostics 패키지 센서 드라이버에 적용하기](https://kyungpyo-kim.github.io/study/ROS-Diagnostics-%ED%8C%A8%ED%82%A4%EC%A7%80-%EC%84%BC%EC%84%9C-%EB%93%9C%EB%9D%BC%EC%9D%B4%EB%B2%84%EC%97%90-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0/)
+* TODO: [ROS Diagnostics 패키지 어플리케이션에 적용하기](https://kyungpyo-kim/github.io)
 
 ## Getting Started
 
